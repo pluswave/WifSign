@@ -1,8 +1,10 @@
 require('../css/main.css');
 
-const WHO = 'JS';
-let greeter = (who) => 'Hello from ' + who + '!';
+const bitsharesjs = require('../lib/bitsharesjs');
 
-document.getElementById('app').appendChild(
-    document.createTextNode(greeter(WHO))
-);
+window.calculate = function(){
+    var pkey = bitsharesjs.PrivateKey.fromWif(document.getElementById('wif').value);
+    var message = document.getElementById('message').value;
+    var result = bitsharesjs.Signature.signBuffer(new Buffer(message, 'utf8'), pkey);
+    document.getElementById('result').value = result.toHex();
+}

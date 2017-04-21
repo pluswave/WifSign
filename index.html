@@ -8,7 +8,12 @@
 
 <main>
     <h1>Welcome to WifSign!</h1>
-    <div id="app"></div>
+    <div id="app">
+        <input type="text" id="wif" placeholder="私钥(Wif格式)" > <br/>
+        <textarea type="text" id="message" placeholder="要签名的消息"></textarea> <br/>
+        <input type="text" id="result" disabled placeholder="签名结果" > <br/>
+        <button onclick="calculate()">计算</button>
+    </div>
 </main>
 
 <script src="bundle.js"></script>

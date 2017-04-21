@@ -17,6 +17,9 @@ main {
     }
 }
 
+input,textarea {
+    min-width: 500px;
+}
 @media (--mobile) {
     :--heading {
         margin-top: 0;
