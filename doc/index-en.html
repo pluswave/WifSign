@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WifSign</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main>
+    <h1>Welcome-to WifSign!</h1> <a href="./index.html">中文版</a>
+    <div id="app">
+        <input type="text" id="wif" placeholder="Private Key (wif format)" > <br/>
+        <textarea type="text" id="message" placeholder="Message need to be signed"></textarea> <br/>
+        Result: <br/>
+        <div id="result"></div> 
+        <button onclick="calculate()">calculate</button>
+    </div>
+</main>
+
+<script src="bundle.js"></script>
+</body>
+</html>
