@@ -33,7 +33,7 @@ module.exports = {
         app: ['./src/js/app.js']
     },
     output: {
-        path: require('path').resolve('doc'),
+        path: require('path').resolve('docs'),
         publicPath: '/',
         filename: 'bundle.js'
     },
